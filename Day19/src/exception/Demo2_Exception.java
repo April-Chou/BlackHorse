@@ -12,7 +12,7 @@ public class Demo2_Exception {
 		Demo d1 = new Demo();
 		try {
 			int x = d1.div(10, 2);
-			System.out.println(x);
+			System.out.println(x + " " );
 		}
 		catch(ArithmeticException a) {
 			System.out.println("chu shu wei 0");
