@@ -7,7 +7,7 @@ package test;
  * finalize 是一个方法。 当垃圾回收器确定不存在对该对象的引用时，由对象的垃圾回收期调用此方法
  * 
  * ru 1如果catch里面有return语句，请问finally语句还会执行吗，请问如果会执行的话，是在return前还是return后。 return后，返回路径里面值没变
- *  finally里面不要写 return， 这样try和catch里面的语句都没有意义
+ *  finally里面不要写 return， 因为finally的作用是释放资源，是肯定会执行的。 如果在finally写 return， 这样try和catch里面的语句都没有意义， try和catch的结果都会被改变
  * 
  */
 
