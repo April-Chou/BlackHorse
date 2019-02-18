@@ -59,15 +59,16 @@ class Person{
 	}
 	/**
 	 * @param age the age to set
+	 * @throws AgeOutofBounceException 
 	 */
-	public void setAge(int age){
+	public void setAge(int age) throws AgeOutofBounceException{
 		
 		if(age > 0 && age <= 150 ) {
 			this.age = age;
 		}
 			
 		else {
-			throw new RuntimeException("Illegal Age");
+			throw new AgeOutofBounceException("Wrong Age");
 		}
 	}
 	
