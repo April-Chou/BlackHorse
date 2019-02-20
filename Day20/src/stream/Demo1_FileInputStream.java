@@ -17,7 +17,7 @@ public class Demo1_FileInputStream {
 			System.out.println(x);
 			
 		}
-		fis.close();
+		fis.close(); 
 		
 		
 		
