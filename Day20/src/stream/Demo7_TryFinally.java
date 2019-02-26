@@ -9,6 +9,30 @@ public class Demo7_TryFinally {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
+		//demo1();
+		
+		//1.7版本最新的try 方法，用了closable方法
+		try(
+				FileInputStream fis = new FileInputStream("xxx.txt");
+				FileOutputStream fos = new FileOutputStream("iii.txt") )
+		{
+			int b;
+			while((b = fis.read()) != -1) {
+				fos.write(b);
+			}
+		}
+				
+				
+				
+
+	}
+
+	/**
+	 * @throws FileNotFoundException
+	 * @throws IOException
+	 */
+	@SuppressWarnings("unused")
+	private static void demo1() throws FileNotFoundException, IOException {
 		FileInputStream fis = null;
 		FileOutputStream fos = null;
 		
@@ -33,7 +57,6 @@ public class Demo7_TryFinally {
 			
 			
 		}
-
 	}
 
 }
