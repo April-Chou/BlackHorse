@@ -40,15 +40,15 @@ public class Test3 {
 //		step 5
 		BufferedWriter bw = new BufferedWriter(new FileWriter("times.txt"));
 		for(Character key : tm.keySet()) {
-			if(key.equals("\r")) {
+			if(key.equals('\r')) {
 				bw.write("huiche" + tm.get(key));
 				bw.newLine();
 			}
-			else if(key.equals("\n")) {
+			else if(key.equals('\n')) {
 				bw.write("huanhang" + tm.get(key));
 				bw.newLine();
 			}
-			else if(key.equals("\t")) {
+			else if(key.equals('\t')) {
 				bw.write("table" + tm.get(key));
 				bw.newLine();
 			}
