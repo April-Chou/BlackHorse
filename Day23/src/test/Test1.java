@@ -41,10 +41,11 @@ public class Test1 {
 				System.out.println("What you entered is a file, Please re-enter: ");
 			}
 			else {
-				sc.close();
+				
 				return file;
 			}
 		}
+		
 	}
 	
 	public static void sumFile(File file) {
