@@ -23,7 +23,7 @@ public class Test4 {
 		File [] subFiles = file.listFiles();
 //		Step 2
 		for(File subFile : subFiles) {
-//      kong 控制打印的\t
+//      kong 控制打印的\t 
 			for(int i=0; i<=lev; i++) {
 				System.out.print("\t");
 			}
